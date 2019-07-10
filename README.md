@@ -1,2 +1,2 @@
-# hello-world
+# C++ programming
 Just another repository
