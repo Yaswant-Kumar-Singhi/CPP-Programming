@@ -1,0 +1,46 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+class complexx
+{
+    int real,img;
+    
+    public:
+        void setData(int x, int y);
+        void showData();
+        complexx add(complexx c);
+        
+};
+
+void complexx::setData(int x, int y)
+{
+    real=x;
+    img=y;
+}
+
+void complexx::showData()
+{
+    cout<<real<<" "<<img;
+}
+complexx complexx::add(complexx c)
+        {
+            complexx temp;
+            temp.real=real+c.real;
+            temp.img=img+c.img;
+            return temp;
+        }
+
+int  main()
+{
+    complexx c1,c2,c3;
+        c1.setData(4,5);
+        c1.showData();
+        cout<<endl;
+        c2.setData(4,5);
+        c2.showData();
+        cout<<endl;
+        c3=c1.add(c2);
+        c3.showData();
+    
+    return 0;
+}
