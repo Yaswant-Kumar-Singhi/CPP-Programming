@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int sum(float* , float*);
+float s;
+int main()
+{
+    float a=5,c=4;
+    sum(&a,&c);
+    cout<<"The sum using the concept of pointer is: "<<s;
+    
+    return 0;
+    
+}
+
+int sum(float* x, float* y)
+{
+  
+    s=*x+*y;
+    return 1;
+}
